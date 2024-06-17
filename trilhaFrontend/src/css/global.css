@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: auto;
+}
+
+
+
+/* background feito com um gerador que é compativel com IE6 */
+main {
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(229,57,57,1) 54%);
+    background: -webkit-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(229,57,57,1) 54%);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(229,57,57,1) 54%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#e53939",GradientType=1);
+
+    width: 100%;
+
+
+}
+
+
+
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header .logo {
+    height: 12vh;
+    margin: 0;
+}
+
+
+header .hamburguer {
+    height: 50px;
+    width: 50px;
+    margin: 0;
+}
+
+
+header .logo img {
+    height: 100%;
+}
+
+
+header .hamburguer img {
+    width: 11vw;
+}
+
+
+header .aboutme nav ul {
+    list-style-type: none;
+    white-space-collapse: preserve-breaks;
+    margin-left: 40px;
+    color: white;
+}
+
+
+header .aboutme nav ul li {
+    background-color: red;
+}
+
+header #menu {
+    display: none;
+    flex-direction: column;
+}
+
+header .aboutme {
+    background: blue;
+    margin: 0;
+    height: 100px;
+    width: 200px;
+}
+
+
+header #menu-button {
+    border: 0;
+    background-color: transparent;
+
+}
