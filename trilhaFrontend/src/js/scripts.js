@@ -1,13 +1,17 @@
-var menuButton = document.getElementById("menu-button");
-var menu = document.getElementById("menu");
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.getElementById('hamburger');
+    const menu = document.getElementById('menu');
+    const close = document.getElementById('close');
+
+    hamburger.addEventListener('click', function() {
 
 
+        menu.style.display = 'block';
+        hamburger.style.display = 'none';
+    });
 
-
-menuButton.addEventListener("click", function() {
-    if (menu.style.display === "block") {
-        menu.style.display = "none";
-    } else {
-        menu.style.display = "block";
-    }
+    close.addEventListener('click', function() {
+        menu.style.display = 'none';
+        hamburger.style.display = 'block';
+    });
 });

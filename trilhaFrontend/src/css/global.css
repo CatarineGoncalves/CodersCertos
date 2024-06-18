@@ -4,27 +4,20 @@
 * {
     box-sizing: border-box;
     padding: 0;
-    margin: auto;
+    margin: 0;
+
+    font-family: "Poppins", sans-serif;
 }
 
-
+body {
+    padding: 10px;
+}
 
 /* background feito com um gerador que é compativel com IE6 */
 main {
-    background: rgb(0,0,0);
-    background: -moz-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(229,57,57,1) 54%);
-    background: -webkit-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(229,57,57,1) 54%);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(229,57,57,1) 54%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#e53939",GradientType=1);
-
+    background-color: white;
     width: 100%;
-
-
 }
-
-
-
-
 
 header {
     display: flex;
@@ -38,51 +31,97 @@ header .logo {
     margin: 0;
 }
 
-
-header .hamburguer {
-    height: 50px;
-    width: 50px;
-    margin: 0;
-}
-
-
 header .logo img {
     height: 100%;
+    margin-left: 10px;
 }
 
 
-header .hamburguer img {
-    width: 11vw;
+.menu-bar {
+    position: relative;
 }
 
+.menu-hamburger {
+    font-size: 30px;
+    cursor: pointer;
+}
 
-header .aboutme nav ul {
+.menu {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    /* width: 200px; */
+    background-color: #030001b3;
+    color: #fff;
+    padding: 20px;
+}
+
+.menu ul {
     list-style-type: none;
-    white-space-collapse: preserve-breaks;
-    margin-left: 40px;
-    color: white;
+    padding: 0;
+}
+
+.menu ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #444;
+}
+
+.menu .close {
+    font-size: 26px;
+    cursor: pointer;
+    text-align: right;
+}
+
+.introduce {
+    text-align: -webkit-center;
+}
+
+.introduce .welcomeMessage {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.profileImg {
+    border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    height: 45vh;
+    width: 45vh;
+    margin-top: 30px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
 }
 
 
-header .aboutme nav ul li {
-    background-color: red;
-}
-
-header #menu {
-    display: none;
-    flex-direction: column;
-}
-
-header .aboutme {
-    background: blue;
-    margin: 0;
-    height: 100px;
-    width: 200px;
+.profileImg img {
+    height: 240px;
+    border-radius: 200px;
+    width: 240px;
 }
 
 
-header #menu-button {
-    border: 0;
-    background-color: transparent;
+.aboutme {
+    margin-top: 40px    ;
+}
 
+.tecnology {
+    margin-top: 40px;
+}
+
+.tecnology h4 {
+    margin-bottom: 20px;
+}
+
+.tecnology-icons img {
+    height: 30px;
 }
