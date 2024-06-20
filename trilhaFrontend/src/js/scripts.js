@@ -1,17 +1,23 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const hamburger = document.getElementById('hamburger');
-    const menu = document.getElementById('menu');
-    const close = document.getElementById('close');
+// Seleciona todas as fases
+const phases = document.querySelectorAll('.phase');
 
-    hamburger.addEventListener('click', function() {
+// Inicializa o índice do slide atual
+let currentSlide = 0;
 
+// Função para mostrar o próximo slide
+function showNextSlide() {
+    // Esconde o slide atual
+    phases[currentSlide].style.display = 'none';
 
-        menu.style.display = 'block';
-        hamburger.style.display = 'none';
-    });
+    // Atualiza o índice para o próximo slide
+    currentSlide = (currentSlide + 1) % phases.length;
 
-    close.addEventListener('click', function() {
-        menu.style.display = 'none';
-        hamburger.style.display = 'block';
-    });
-});
+    // Mostra o próximo slide
+    phases[currentSlide].style.display = 'block';
+}
+
+// Mostra o primeiro slide inicialmente
+phases[currentSlide].style.display = 'block';
+
+// Define um intervalo para avançar automaticamente os slides a cada 5 segundos
+setInterval(showNextSlide, 1000);
