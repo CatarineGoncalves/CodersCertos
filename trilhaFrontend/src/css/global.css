@@ -1,46 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: "Poppins", sans-serif;
 }
 
 body {
-    background: linear-gradient(90deg, rgba(0,0,0,1) 97%, rgba(229,57,57,1) 100%);
+    background-color: #f4f4f4;
+    }
+
+h1, h2, h3, h4 {
+    font-family: "Roboto", sans-serif;
+
 }
 
 h1 {
-    font-size: 25px;
-    font-weight: 500;
-    margin-top: 10px;
+    font-size: 3rem;
+    font-weight: 600;
     margin-bottom: 10px;
-    color: #e0e0e0;
 }
+
 
 h2, h3 {
     font-size: 20px;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 16px;
     font-weight: 400;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    color: #e0e0e0;
 }
 
 p {
+    font-family: "Lato", sans-serif;
     font-size: 16px;
-    font-weight: 300;    
-    color: #e0e0e0;
+    font-weight: 300;
+    line-height: 1.8;
+    word-spacing: 3px;
+
 }
+
+.colorCoders {
+    color: #e53939;
+}
+
+.colorsTwitch {
+    color: #6034b2;
+    font-weight: bold;
+}
+
+
+
 
 .sectionTitle {
     text-align: center;
-    margin-bottom: 3em;
+    text-transform: uppercase;
+    margin-top: 4em;
+    margin-bottom: 4em;
 }
 
 main {
     width: 100%;
-    padding: 20px;
 }
 
 /* Header */
@@ -61,275 +83,346 @@ header .logo img {
 }
 
 /* Introdução */
+
+.mainIntroduce {
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+
 .introduce {
     text-align: -webkit-center;
-    margin-top: 40px;
+    
 }
 
 .introduce .welcomeMessage {
-    margin-top: 50px;
-    text-align: left;
-    color: #fff;
+    text-align: center;
+    margin-top: 4em;
+    background-color: #f4f4f4;
 }
 
-.profileImg {
-    border-radius: 200px;
-    height: 45vh;
-    width: 45vh;
-    margin-top: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: inset 0 0 40px rgb(255, 255, 255), 0 0 50px #ffffff;
-    border: 1px solid white;
-}
 
-.profileImg img {
-    height: 240px;
-    border-radius: 200px;
-    width: 240px;
-    z-index: 1;
-    object-fit: cover;
-}
 
 /* Sobre mim */
+
+
 .aboutMe {
-    margin-top: 40px;
-    padding: 10px;
+    background-color:#1b1b1b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    margin-top: 3em;
 }
 
-.aboutMeResume div {
-    border-radius: 50px;
-    box-shadow: 0px 0px 20px -1px rgba(246, 0, 4, 1);
+.aboutMeResume {
     padding: 20px;
-    margin-top: 30px;
+    margin-bottom: 5em;
+    width: 90%;
+    box-shadow: rgba(229, 57, 57, 0.4) 0px 5px, rgba(229, 57, 57, 0.3) 0px 10px, rgba(229, 57, 57, 0.2) 0px 15px, rgba(229, 57, 57, 0.1) 0px 20px, rgba(229, 57, 57, 0.05) 0px 25px;
+
+    background-color: #f7f7f7;
+    color: #000;
+
+    border-radius: 10px;
+
 }
 
-.sectionInfo {
-    height: auto;
+.aboutMeResume h3 {
+    margin-bottom: 20px;
 }
 
-.aboutMeResume div:nth-child(2) {
-    margin-top: 40px;
-}
 
 /* Tecnologia */
-.aboutTecnology, .aboutPersonality {
-    margin-top: 5em;
+
+
+
+/* Personalidade */
+.aboutPersonality {
+    background-color: #1b1b1b;
+    color: #fff;
+    padding: 20px;
+    margin-top: 3em;
+}
+
+.personalityMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.personalityArrow {
+    transform: rotate(90deg);
+}
+
+.personalityContainer {
+    background-color: #f4f4f4;
+    color: #000;
+    height: 31vh;
+    width: 100%;
+    margin: 17px;
+    display: flex;
+    align-items: center;
+    /* flex-direction: column; */
+    justify-content: center;
     padding: 10px;
+    border-radius: 10px;
+}
+
+
+
+.personalityContainer img {
+    height: 10vh;
+    margin-right: 20px;
+}
+
+.personalityTrait {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+.a-Twitch {
+    color: #000;
 }
 
 
 /* Frases */
 .aboutPhases {
     align-content: center;
-    margin-top: 40px;
-    padding: 10px;
     width: 100%;
     overflow: hidden;
     text-align: -webkit-center;
-    height: 100vh;
 }
 
 .phase {
-    border-radius: 30px;
-    box-shadow: 0px 0px 19px 3px #e53939;
     background-color: #000;
-    border: 1px solid #e53939;
-    width: 100%; 
-    display: none; 
+    width: 100%;
+    display: none;
     padding: 20px;
-    box-sizing: border-box;     
+    box-sizing: border-box;
     text-align: center;
     height: 70vh;
+    color: #fff;
+    border-radius: 10px;
 }
 
 .phaseImg {
     height: 22vh;
     border-radius: 50%;
+    margin-bottom: 13px;
 }
 
-.phaseCharacter, .phaseQuote { 
-    color: white;
+.phaseCharacter, .phaseQuote {
     text-align: center;
-    margin-bottom: 20px;
+}
+
+
+
+/* Motivação */
+
+.aboutFAQ {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    
+}
+
+.sectionFAQTitle {
+    margin-top: 4em;
+    margin-bottom: 2em;
+}
+
+
+.aboutFAQ details {
+    display: block; 
+    width: auto;
+    margin: 10px 0;
+    
+}
+
+.aboutFAQ summary {
+    list-style-type: none;
+    background: #1b1b1b;;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary:before {
+    content: "+";
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 5px;
+    padding: 0;
+    width: 20px;
+    text-align: center;
+ }
+ 
+ details[open] summary:before {
+   content: "-";
+ }
+
+
+
+.acordionFAQ {
+    width: 100%;
+}
+
+.acordionFAQ p {
+    border: 1px solid #1b1b1b;;
+    padding: 20px;
+    margin-top: -13px;
+    border-radius: 10px;
+
+}
+
+
+
+
+
+/* Rodapé */
+
+
+footer {
+    background-color: #1b1b1b;
+    padding: 20px;
+    text-align: center;
+    margin-top: 3em;
+    border-radius: 50px 40px 0px 0px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-left img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid #e53939;
+}
+
+.footer-center {
     margin-top: 10px;
 }
 
-/* Motivação */
-.aboutMotivation {
+.footer-center .btn {
+    display: block;
+    width: 200px;
+    margin: 5px auto;
     padding: 10px;
-    margin-top: 40px;
-}
-
-.awnserMotivation {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.awnserMotivation div {
-    background: #fff;
-    width: 100%;
-    height: 4px;
-    border-radius: 200px;
-}
-
-.awnserMotivation h3 {
-    padding: 20px;
-}
-
-.divTextMotivation {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: -webkit-center;
-}
-
-.textMotivation {  
-    color: #000 !important;
-    background-color: white;
-    text-align: left;
-    padding: 40px;
-    border-radius: 10px;
-}
-
-/* Rodapé */
-.footer {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5em;
-
-    border-radius: 60px 60px 0px 0px;
-    background-color: #fff;
-}
-
-.footerText {
-    margin-top: 40px;
-}
-
-.footerText p { 
-    color: #000;
-}
-
-.socialLink {
-    display: flex;
-    justify-content: space-evenly;}
-
-.footerIcon {
-    width: 40px;
-    margin: 30px;
-
-    margin: 20px 3% 20px;
-}
-
-
-.buttonFooter {
-
-   
-    background-color: #000000;
-   
-   
-    padding: 10px 30px;
-    border: solid #ffffff 2px;
-    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
-    border-radius: 41px;
-   
-    transition : 3000ms;
-    transform: translateY(0);
-   
-   
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-   
-    cursor: pointer;
-    text-transform: uppercase;
-
-    
-}
-
-.buttonFooter a {
-    color: #fff !important;
     text-decoration: none;
+    color: #fff;
+    background-color: #e53939;
+    border-radius: 5px;
+}
 
-    font-weight: 400;
+.footer-center .btn:hover {
+    background-color:  #c62828;
+}
+
+.footer-right {
+    margin-top: 10px;
+}
+
+.footer-right a {
+    margin: 0 10px;
+}
+
+.footer-right img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-right img:hover {
+    opacity: 0.7;
+}
+
+.copyright {
+    margin-top: 20px;
     font-size: 14px;
+    color: #666;
 }
-    
-.buttonFooter:hover{  
-    transition : 3000ms;
-    padding: 10px 24px;
-    transform : translateY(-0px);
-    background-color: #ffffff;
-    color: #000000;
-    border: solid 2px #ff0000;
-}
-    
+
+
+
+
+
 /* Responsivo */
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 700px) { 
     .mainIntroduce {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 7em;
     }
 
-    .profileImg {
-        margin-right: 5em;
-    }
-
-    .aboutMe {
-        margin-top: 5em;
-    }
-    .arrowContainer {
-        margin-top: 7em;
-    } 
-    
-
-    .aboutMeResume {
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    .aboutMeResume div:nth-child(2) {
-        margin: 0;
-    }
-
-    .aboutMeResume div {
-        margin: 0;
-    }
-
-    .sectionInfo {
-        width: 45%;
-        height: auto;
-    }
-
-    .sectionText {
-        width: 45%;
-    }
 
     .phase {
+        width: 60%;
+        height: 400px;
+    }
+
+    .phaseImg {
+        margin-top: 3em;
+    }
+
+
+}
+
+
+@media only screen and (min-width: 1000px) {
+    
+    .aboutMeResume {
+        width: 90%;
+ 
+    }
+
+    
+    .personalityMain {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .personalityTrait {
+        font-size: 16px;
+    }
+
+    .personalityArrow {
+        transform: rotate(0deg);
+    }
+
+    .arrowContainer {
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+
+
+    .textFAQ {
         width: 50%;
-        padding: 100px;
-        height: auto;
     }
 
-
-    .textMotivation {
-        width: 50%;
-    }
-
-    .footer {
-        text-align: -webkit-center;
-    }
-
-    .footer hr {
-        margin-top: 2em;
-    }
+   
 
     .desktopFooter {
         display: flex;
@@ -338,41 +431,21 @@ header .logo img {
         width: 45%;
     }
 
-
     .socialLink {
         width: 40vh;
     }
-
 
     .contactLink {
         display: flex;
         justify-content: space-evenly;
     }
 
-    .personalityMain {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+
+
+    .footer {
+        text-align: -webkit-center;
     }
 
-    .personalityContainer {
-        height: 10vh;
-        width: 30vw;
-        margin-left: 8px;
-        margin-bottom: 18px;
-        display: flex;
-        align-items: center;
-        padding: 10px;
-        border: 1px solid red;
-       
+    .footer hr {
     }
-
-
-    .sectionTitle {
-        margin-bottom: 3em;
-    }
-
-
-
-    
 }
