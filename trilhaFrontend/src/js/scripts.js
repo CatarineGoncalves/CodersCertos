@@ -20,4 +20,38 @@ function showNextSlide() {
 phases[currentSlide].style.display = 'block';
 
 // Define um intervalo para avançar automaticamente os slides a cada 5 segundos
-setInterval(showNextSlide, 1000);
+setInterval(showNextSlide, 5000);
+
+
+
+// tradutor
+
+var comboGoogleTradutor = null; //Variavel global
+
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+        pageLanguage: 'pt',
+        includedLanguages: 'en,es',
+        layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+    }, 'google_translate_element');
+
+    comboGoogleTradutor = document.getElementById("google_translate_element").querySelector(".goog-te-combo");
+}
+
+function changeEvent(el) {
+    if (el.fireEvent) {
+        el.fireEvent('onchange');
+    } else {
+        var evObj = document.createEvent("HTMLEvents");
+
+        evObj.initEvent("change", false, true);
+        el.dispatchEvent(evObj);
+    }
+}
+
+function trocarIdioma(sigla) {
+    if (comboGoogleTradutor) {
+        comboGoogleTradutor.value = sigla;
+        changeEvent(comboGoogleTradutor);//Dispara a troca
+    }
+}

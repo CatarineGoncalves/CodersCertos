@@ -201,10 +201,10 @@ header .logo img {
     background-color: #000;
     width: 100%;
     display: none;
-    padding: 20px;
+    padding: 7px;
     box-sizing: border-box;
     text-align: center;
-    height: 70vh;
+    height: 65vh;
     color: #fff;
     border-radius: 10px;
 }
@@ -212,7 +212,8 @@ header .logo img {
 .phaseImg {
     height: 22vh;
     border-radius: 50%;
-    margin-bottom: 13px;
+    margin-bottom: 2em;
+    margin-top: 2em;
 }
 
 .phaseCharacter, .phaseQuote {
@@ -374,13 +375,15 @@ footer {
 
 
     .phase {
-        width: 60%;
+        width: 50%;
         height: 400px;
+        text-align: inherit;
     }
 
     .phaseImg {
         margin-top: 3em;
     }
+
 
 
 }
@@ -392,7 +395,6 @@ footer {
         width: 90%;
  
     }
-
     
     .personalityMain {
         display: flex;
@@ -414,38 +416,13 @@ footer {
         justify-content: center;
     }
 
-
-
-
+    .phaseQuote {
+        width: 75%;
+    }
 
     .textFAQ {
         width: 50%;
     }
 
    
-
-    .desktopFooter {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        width: 45%;
-    }
-
-    .socialLink {
-        width: 40vh;
-    }
-
-    .contactLink {
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-
-
-    .footer {
-        text-align: -webkit-center;
-    }
-
-    .footer hr {
-    }
 }
